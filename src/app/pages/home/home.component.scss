@@ -1,0 +1,53 @@
+#why, #how, #what
+{
+  position: relative;
+  background-color: transparent;
+}
+
+#why::after
+{
+  content: "";
+  background: url(https://www.embracingourdifferences.org/images/directory/gallery/2018/eod0739_lrg.jpg);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+#how::after
+{
+  content: "";
+  background: url(https://themariasanchezshow.com/wp-content/uploads/2018/12/equal-e1545340741228.jpg);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
+
+#what::after
+{
+  content: "";
+  background: url(https://dma.org.uk/uploads/articles/T-59e4d0025f339-aaeaaqaaaaaaaabwaaaajdnjote2ntqxltbhmwutngqxny1hnzaxlte4zwq5mgnjztc4yq_59e4d0025f29b-5.webp);
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% auto;
+}
