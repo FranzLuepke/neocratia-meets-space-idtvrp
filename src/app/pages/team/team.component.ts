@@ -35,7 +35,7 @@ export class TeamComponent implements OnInit {
       name: 'Andrés González',
       twitter: '',
       twitterUrl: '',
-      description: `Andres is a software developer, entrepreneur and tech enthusiast. Originary from Colombia,
+      description: `Andrés is a software developer, entrepreneur and tech enthusiast. Originary from Colombia,
       he has been in the software industry for more than 10 years leading projects for companies around the world.
       He is the founder and technical leader of Swapps a software development company based in Colombia. He is the maintainer
       of the Neocratium platform.`,
@@ -58,10 +58,10 @@ export class TeamComponent implements OnInit {
       twitter: '@ni500',
       twitterUrl: 'https://twitter.com/ni500',
       description: `Our project leader. Nicolás is a software engineer and geek. Activist and entrepreneur with
-      background in industrial and Electronic Engenier, founder of companies as Vaki and PappCorn, a startup incubator that
+      background in industrial and Electronic Engineer, founder of companies as Vaki and PappCorn, a startup incubator that
       had launch products as https://vaki.co, https://guardican.com, http://trepsi.co, http://treeoflifeapp.com, https://bhiveconsulting.co
       and many others. Product Manager at Vaki, CEO at PappCorn and Product Manager, main developer and mantainer of Neocratium platform on
-      Neocratia `,
+      Neocratia.`,
       bioUrl: 'https://www.linkedin.com/in/rolfveldman/',
       photo: 'https://www.neocratia.org/_nuxt/img/nicolas-bw.579fb49.jpg'
     }
