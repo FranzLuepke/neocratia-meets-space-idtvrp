@@ -1,23 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder } from '@angular/forms';
+import { Message } from '../../message';
 
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
-  FormData: FormGroup;
+export class ContactComponent {
+  model = new Message('', '', '', '');
 
-  constructor(private builder: FormBuilder) {}
+  constructor() {}
 
-  ngOnInit() {
-    this.FormData = this.builder.group({
-      Fullname: new FormControl('', [Validators.required]),
-      Email: new FormControl('', [
-        Validators.compose([Validators.required, Validators.email])
-      ]),
-      Comment: new FormControl('', [Validators.required])
-    });
+  processForm() {
+    console.log('TEST');
+    console.log('My name is ' + this.model.name);
+    //const allInfo = `My name is ${this.name}. My email is ${this.email}. My subject is ${this.subject}. The description is ${this.description}`;
+    //alert(allInfo);
   }
 }

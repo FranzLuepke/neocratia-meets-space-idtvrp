@@ -1,32 +1,51 @@
 <header id="contact_header">
   <div class="header-section">
     <div class="header-headline">
-      <h1 class="mat-h1">Latest News!</h1>
-      <p>Check the latests news about Neocratia.</p>
+      <h1 class="mat-h1">Contact us!</h1>
+      <p>Feel free to write to us.</p>
     </div>
   </div>
 </header>
 
 <div class="container">
-  <h2 class="text-center mb-5">Angular Contact Form Hosted On FireBase</h2>
   <div class="row">
-    <div class="col-md-6 offset-md-3">
-      <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+    <div class="col col-sm-10">
+      <form>
         <div class="form-group">
-          <label for="Email">Email</label>
-          <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email"formControlName="Email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          <label for="nameInput">Name:</label>
+          <input required type="name" class="form-control" id="nameInput" aria-describedby="nameHelp" placeholder="Write your name here..." [(ngModel)]="model.name" name="name"
+          #name="ngModel">
+          <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
+            Name is required
+          </div>
         </div>
         <div class="form-group">
-          <label for="fullname">Full Name</label>
-          <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname">
+          <label for="emailInput">E-Mail:</label>
+          <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Write your E-Mail here..." [(ngModel)]="model.email" name="email"
+          #email="ngModel">
+          <small id="emailHelp" class="form-text text-muted">Don't worry, we won't share your E-Mail with anyone.</small>
+          <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
+            E-Mail is required
+          </div>
         </div>
         <div class="form-group">
-          <label for="comment">Comment</label>
-          <textarea class="form-control" formControlName="Comment" name="Comment">
-</textarea>
+          <label for="subjectInput">Subject:</label>
+          <input type="subject" class="form-control" id="subjectInput" aria-describedby="subjectHelp" placeholder="Write your subject here..." [(ngModel)]="subject.email" name="subject"
+          #subject="ngModel">
+          <div [hidden]="subject.valid || subject.pristine" class="alert alert-danger">
+            Subject is required
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Submit</button>
+        <div class="form-group">
+          <label for="descriptionTextarea">Description:</label>
+          <textarea class="form-control" id="descriptionTextarea" rows="3" placeholder="Write your description here..." [(ngModel)]="description.email" name="description"
+          #description="ngModel"></textarea>
+          <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
+            Description is required
+          </div>
+        </div>
+        <br>
+        <button type="button" class="btn btn-warning" (click)="processForm()">Submit</button>
       </form>
     </div>
   </div>
