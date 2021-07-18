@@ -6,6 +6,7 @@ import { TeamComponent } from './team/team.component';
 import { ProductsComponent } from './products/products.component';
 import { NgMaterialModule } from '../core/ng-material.module';
 import { NewsComponent } from './news/news.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   imports: [CommonModule, PagesRoutingModule, NgMaterialModule],
@@ -13,7 +14,8 @@ import { NewsComponent } from './news/news.component';
     HomeComponent,
     TeamComponent,
     ProductsComponent,
-    NewsComponent
+    NewsComponent,
+    AboutComponent
   ],
   exports: [ProductsComponent, HomeComponent, TeamComponent, ProductsComponent]
 })

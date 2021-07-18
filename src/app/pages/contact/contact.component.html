@@ -12,7 +12,7 @@
     <div class="col col-sm-10">
       <form>
         <div class="form-group">
-          <label for="nameInput">Name:</label>
+          <label for="nameInput">Name: </label><span class="required-asterisk"> *</span>
           <input required type="text" class="form-control" id="nameInput" aria-describedby="nameHelp" placeholder="Write your name here..." [(ngModel)]="model.name" name="name"
           #name="ngModel">
           <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
@@ -20,8 +20,8 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="emailInput">E-Mail:</label>
-          <input type="text" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Write your E-Mail here..." [(ngModel)]="model.email" name="email"
+          <label for="emailInput">E-Mail:</label><span class="required-asterisk"> *</span>
+          <input required type="text" class="form-control" id="emailInput" aria-describedby="emailHelp" placeholder="Write your E-Mail here..." [(ngModel)]="model.email" name="email"
           #email="ngModel">
           <small id="emailHelp" class="form-text text-muted">Don't worry, we won't share your E-Mail with anyone.</small>
           <div [hidden]="email.valid || email.pristine" class="alert alert-danger">
@@ -29,16 +29,16 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="subjectInput">Subject:</label>
-          <input type="text" class="form-control" id="subjectInput" aria-describedby="subjectHelp" placeholder="Write your subject here..." [(ngModel)]="model.subject" name="subject"
+          <label for="subjectInput">Subject:</label><span class="required-asterisk"> *</span>
+          <input required type="text" class="form-control" id="subjectInput" aria-describedby="subjectHelp" placeholder="Write your subject here..." [(ngModel)]="model.subject" name="subject"
           #subject="ngModel">
           <div [hidden]="subject.valid || subject.pristine" class="alert alert-danger">
             Subject is required
           </div>
         </div>
         <div class="form-group">
-          <label for="descriptionTextarea">Description:</label>
-          <textarea class="form-control" id="descriptionTextarea" rows="3" placeholder="Write your description here..." [(ngModel)]="model.description" name="description"
+          <label for="descriptionTextarea">Description:</label><span class="required-asterisk"> *</span>
+          <textarea required class="form-control" id="descriptionTextarea" rows="3" placeholder="Write your description here..." [(ngModel)]="model.description" name="description"
           #description="ngModel"></textarea>
           <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
             Description is required
