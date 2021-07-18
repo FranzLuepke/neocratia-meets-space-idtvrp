@@ -30,13 +30,17 @@ export class NavbarComponent implements OnInit {
       link: 'news'
     },
     {
+      name: 'Meet the team',
+      link: 'team'
+    },
+    {
       name: 'About',
       link: 'about'
     },
     {
       name: 'Contact us',
       link: 'contact'
-    },
+    }
   ];
 
   constructor() {}

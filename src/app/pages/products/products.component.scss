@@ -4,11 +4,23 @@
   height: 300px;
 }
 
-.card-img-left {
+.card-title {
+  color: rgb(76, 12, 97);
+}
+
+.img-container {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  width: 50%;
-  height: auto;
+  object-fit: cover;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  min-width: 40%;
+}
+
+.img-container .card-img-left {
+  flex: 1;
+  max-width: 100%;
 }
 
 .card-title {
