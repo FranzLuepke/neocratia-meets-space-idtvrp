@@ -1,5 +1,21 @@
+#products_header {
+  background-color: rgb(51, 27, 59);
+  color: white;
+  height: 300px;
+}
+
 .box {
   display: flex;
   flex-wrap: wrap;
   place-content: center;
+}
+
+.team-card {
+  padding-bottom: 30em;
+}
+
+.btn {
+  background-color: rgba(142, 36, 170, 1);
+  color: white;
+  border: black;
 }

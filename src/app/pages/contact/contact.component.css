@@ -1,5 +1,5 @@
 #contact_header {
-  background-color: rgb(51, 27, 59);;
+  background-color: rgb(51, 27, 59);
   color: white;
   height: 300px;
 }
@@ -14,9 +14,8 @@
   color: red;
 }
 
-.btn
-{
-  background-color: rgba(142,36,170,1);  
+.btn {
+  background-color: rgba(142, 36, 170, 1);
   color: white;
   border: black;
 }
