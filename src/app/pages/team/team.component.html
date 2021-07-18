@@ -10,6 +10,7 @@
 <div id="team" class="docs-homepage-promo">
   <div class="box">
     <div *ngFor="let member of teamMembers">
+    <div class="card">
       <mat-card class="team-card">
         <mat-card-header class="card-header">
           <img mat-card-md-image src="{{ member.photo }}" />
@@ -27,5 +28,6 @@
       </mat-card>
       <br>
     </div>
+  </div>
   </div>
 </div>
