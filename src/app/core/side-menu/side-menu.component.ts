@@ -13,6 +13,7 @@ export interface MenuItem {
 export class SideMenuComponent implements OnInit {
   @Output() itemPressed = new EventEmitter();
   menuItems: MenuItem[];
+  homeItems: MenuItem[];
   menuItems2: MenuItem[];
 
   constructor() {}
@@ -34,6 +35,29 @@ export class SideMenuComponent implements OnInit {
       //   link: 'blog',
       //   icon: 'record_voice_over'
       // }
+    ];
+
+    this.homeItems = [
+      {
+        title: 'Products',
+        link: 'products',
+        icon: ''
+      },
+      {
+        title: 'News',
+        link: 'news',
+        icon: ''
+      },
+      {
+        title: 'About',
+        link: 'about',
+        icon: ''
+      },
+      {
+        title: 'Contact',
+        link: 'contact',
+        icon: ''
+      }
     ];
 
     this.menuItems2 = [

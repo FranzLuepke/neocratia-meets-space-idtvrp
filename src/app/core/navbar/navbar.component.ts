@@ -9,17 +9,37 @@ export class NavbarComponent implements OnInit {
   @Output() togleMenu = new EventEmitter();
 
   navItems = [
+    //{
+    //  name: 'WHY',
+    //  link: '#why'
+    //},
+    //{
+    //  name: 'HOW',
+    //  link: '#how'
+    //},
+    //{
+    //  name: 'WHAT',
+    //  link: '#what'
+    //},
     {
-      name: 'WHY',
-      link: '#why'
+      name: 'Products',
+      link: 'products'
     },
     {
-      name: 'HOW',
-      link: '#how'
+      name: 'News',
+      link: 'news'
     },
     {
-      name: 'WHAT',
-      link: '#what'
+      name: 'Meet the team',
+      link: 'team'
+    },
+    {
+      name: 'About',
+      link: 'about'
+    },
+    {
+      name: 'Contact us',
+      link: 'contact'
     }
   ];
 

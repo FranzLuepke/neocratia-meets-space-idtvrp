@@ -1,17 +1,17 @@
-#products_header {
+#contact_header {
   background-color: rgb(51, 27, 59);
   color: white;
   height: 300px;
 }
 
-.box {
-  display: flex;
-  flex-wrap: wrap;
-  place-content: center;
+.container {
+  padding-top: 3em;
+  padding-bottom: 3em;
+  width: 30em;
 }
 
-.team-card {
-  height: fit-content;
+.required-asterisk {
+  color: red;
 }
 
 .btn {

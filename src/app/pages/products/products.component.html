@@ -1,3 +1,26 @@
-<p>
-  products works!
-</p>
+<header id="home_header">
+  <div class="header-section">
+    <div class="header-headline">
+      <h1 class="mat-h1">Check our products!</h1>
+      <p>Products designed for the people</p>
+    </div>
+  </div>
+</header>
+
+<div *ngFor="let product of products">
+  <div class="docs-homepage-promo">
+    <div class="col col-sm-10">
+      <div class="row">
+        <div class="card flex-row border-dark mb-3">
+          <div class="img-container">
+            <img class="card-img-left example-card-img-responsive" src="{{ product.photo }}"/>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title h5 h4-sm">{{ product.title }}</h4>
+            <p class="card-text">{{ product.text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

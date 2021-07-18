@@ -1,14 +1,14 @@
-#why, #how, #what
-{
+#why,
+#how,
+#what {
   position: relative;
   background-color: transparent;
 }
 
-#why::after
-{
-  content: "";
+#why::after {
+  content: '';
   background: url(https://www.embracingourdifferences.org/images/directory/gallery/2018/eod0739_lrg.jpg);
-  opacity: 0.2;
+  opacity: 0.6;
   top: 0;
   left: 0;
   bottom: 0;
@@ -17,14 +17,14 @@
   z-index: -1;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% auto;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-#how::after
-{
-  content: "";
+#how::after {
+  content: '';
   background: url(https://themariasanchezshow.com/wp-content/uploads/2018/12/equal-e1545340741228.jpg);
-  opacity: 0.2;
+  opacity: 0.5;
   top: 0;
   left: 0;
   bottom: 0;
@@ -33,14 +33,14 @@
   z-index: -1;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% auto;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
-#what::after
-{
-  content: "";
+#what::after {
+  content: '';
   background: url(https://dma.org.uk/uploads/articles/T-59e4d0025f339-aaeaaqaaaaaaaabwaaaajdnjote2ntqxltbhmwutngqxny1hnzaxlte4zwq5mgnjztc4yq_59e4d0025f29b-5.webp);
-  opacity: 0.2;
+  opacity: 0.4;
   top: 0;
   left: 0;
   bottom: 0;
@@ -49,5 +49,57 @@
   z-index: -1;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100% auto;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h4 {
+  text-align: center;
+}
+
+#main-header {
+  background-color: black;
+  opacity: 0.9;
+  color: white;
+  padding-top: 0.1em;
+  padding-bottom: 0.1px;
+}
+
+.background {
+  text-align: center;
+}
+
+.background span {
+  background-color: rgb(51, 27, 59);
+  color: white;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  opacity: 2;
+}
+
+.header-start {
+  opacity: 1;
+  color: black;
+  padding-top: 0.3em;
+}
+
+.button {
+  opacity: 0.8;
+  background-color: rgba(142, 36, 170, 1);
+  color: white;
+  border: black;
+}
+
+#home {
+  background: url(https://thumbs.gfycat.com/EmbellishedAbsoluteKestrel-size_restricted.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 30em;
+}
+
+.card-title {
+  color: rgb(76, 12, 97);
 }

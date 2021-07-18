@@ -18,7 +18,7 @@ export class TeamComponent implements OnInit {
       In the US, Alexander is an activist that pushes for immigration reform.
       In Colombia, he works to improve government support for innovation. Alexander is the founder of Neocratia.`,
       bioUrl: 'https://bio.torre.co/torrenegra',
-      photo: 'https://www.neocratia.org/_nuxt/img/alex-bw.c8dd4bf.png'
+      photo: 'https://pbs.twimg.com/profile_images/933013816580849664/8-z7es-z_400x400.jpg'
     },
     {
       name: 'Helena Schwertheim',
@@ -29,7 +29,7 @@ export class TeamComponent implements OnInit {
       having lived and studied in Australia, Colombia, Spain and France, and is now based in Sweden.
       During the day Helena is a researcher, analysing democratic trends. By night she works with Neocrats to upgrade how laws are made.`,
       bioUrl: 'https://www.linkedin.com/in/helenaschwertheim/',
-      photo: 'https://www.neocratia.org/_nuxt/img/helena-bw.039fd06.jpg'
+      photo: 'https://pbs.twimg.com/profile_images/1337056300262432769/1s6tSB2M_400x400.jpg'
     },
     {
       name: 'Andrés González',
@@ -40,7 +40,7 @@ export class TeamComponent implements OnInit {
       He is the founder and technical leader of Swapps a software development company based in Colombia. He is the maintainer
       of the Neocratium platform.`,
       bioUrl: 'https://www.linkedin.com/in/andresgz/',
-      photo: 'https://www.neocratia.org/_nuxt/img/andres-bw.4718ba8.jpg'
+      photo: 'https://media-exp1.licdn.com/dms/image/C4E03AQFjIA_UrBVjWg/profile-displayphoto-shrink_200_200/0/1586961207456?e=1630540800&v=beta&t=liJXqQS-1eX2GJjITj6FbS_rLZXMC2syFRGF9g_dmxA'
     },
     {
       name: 'Rolf Veldman',
@@ -51,7 +51,7 @@ export class TeamComponent implements OnInit {
       Fueled by his academic education in political history Rolf has always had a more than average interest in politics.
       He joined Neocratia in November 2017 and is responsible for Recruitment, Fundraising and Political Advice.`,
       bioUrl: 'https://www.linkedin.com/in/rolfveldman/',
-      photo: 'https://www.neocratia.org/_nuxt/img/rolf-bw.e67a299.jpg'
+      photo: 'https://pbs.twimg.com/profile_images/885495923232657410/QoCBaLOU.jpg'
     },
     {
       name: 'Nicolás Contreras',
@@ -63,7 +63,7 @@ export class TeamComponent implements OnInit {
       and many others. Product Manager at Vaki, CEO at PappCorn and Product Manager, main developer and mantainer of Neocratium platform on
       Neocratia.`,
       bioUrl: 'https://www.linkedin.com/in/rolfveldman/',
-      photo: 'https://www.neocratia.org/_nuxt/img/nicolas-bw.579fb49.jpg'
+      photo: 'https://pbs.twimg.com/profile_images/1397241186281263115/44bhlCjt_400x400.jpg'
     }
   ];
   constructor() {}

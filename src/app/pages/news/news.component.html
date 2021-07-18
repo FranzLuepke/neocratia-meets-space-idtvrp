@@ -1,0 +1,27 @@
+<header id="news_header">
+  <div class="header-section">
+    <div class="header-headline">
+      <h1 class="mat-h1">Latest News!</h1>
+      <p>Check the latests news about Neocratia.</p>
+    </div>
+  </div>
+</header>
+<div *ngFor="let new of news">
+  <div class="docs-homepage-promo">
+    <div class="col col-sm-10">
+      <div class="row">
+        <div class="card flex-row border-dark mb-3">
+          <div class="img-container">
+            <img class="card-img-left example-card-img-responsive" src="{{ new.photo }}"/>
+          </div>
+          <div class="card-body">
+            <h4 class="card-title h5 h4-sm">{{ new.title }}</h4>
+            <p class="card-text">{{ new.text }}</p>
+            <a href="{{ new.url }}">See more...</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="box"></div>
+</div>
