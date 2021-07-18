@@ -20,7 +20,23 @@ export class NavbarComponent implements OnInit {
     {
       name: 'WHAT',
       link: '#what'
-    }
+    },
+    {
+      name: 'Products',
+      link: 'products'
+    },
+    {
+      name: 'News',
+      link: 'news'
+    },
+    {
+      name: 'About',
+      link: 'about'
+    },
+    {
+      name: 'Contact us',
+      link: 'contact'
+    },
   ];
 
   constructor() {}

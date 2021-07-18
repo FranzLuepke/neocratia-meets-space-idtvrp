@@ -5,6 +5,7 @@
   <a mat-button class="docs-button" href="/#home" aria-label="neocratia">
     <img class="navbar-logo" src="https://firebasestorage.googleapis.com/v0/b/neocratia-website.appspot.com/o/space-assets%2Flogo.png?alt=media&token=0bf78b11-e798-4788-960d-a6f6230d3fe2" alt="neocratia" />
   </a>
+
   <a mat-button class="docs-navbar-hide-small docs-button hide-mobile" *ngFor="let nav of navItems"
     href="/{{ nav.link }}">{{ nav.name }}</a>
   <div class="flex-spacer"></div>
