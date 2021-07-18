@@ -1,5 +1,19 @@
 #news_header {
-  background-color: black;
+  background-color: rgb(51, 27, 59);
   color: white;
   height: 300px;
+}
+
+.card-body {
+  word-break: break-word;
+  width: 70%;
+}
+
+.test {
+  background-color: rgb(51, 27, 59);
+}
+
+.card-img-left {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
