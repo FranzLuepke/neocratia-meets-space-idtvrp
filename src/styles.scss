@@ -23,7 +23,23 @@ body {
 
 .header-background {
   overflow: hidden;
-  background-color: rgba(143, 35, 170, 0.8);
+  //background-color: rgba(143, 35, 170, 0.8);
+  height: 350px;
+}
+.header-background::after
+{
+  content: "";
+  background: url(https://thumbs.gfycat.com/EmbellishedAbsoluteKestrel-size_restricted.gif);
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   height: 350px;
 }
 .header-section {
@@ -31,6 +47,7 @@ body {
   padding-top: $margin-promotion-sections;
 }
 .header-headline {
+  opacity: 0.8;
   text-align: center;
   margin-top: 50px;
   h1 {
