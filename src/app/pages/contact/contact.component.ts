@@ -13,7 +13,10 @@ export class ContactComponent {
 
   processForm() {
     console.log('TEST');
-    console.log('My name is ' + this.model.name);
+    console.log('The name is ' + this.model.name);
+    console.log('The email is ' + this.model.email);
+    console.log('The subject is ' + this.model.subject);
+    console.log('The description is ' + this.model.description);
     //const allInfo = `My name is ${this.name}. My email is ${this.email}. My subject is ${this.subject}. The description is ${this.description}`;
     //alert(allInfo);
   }
