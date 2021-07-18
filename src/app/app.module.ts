@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgMaterialModule } from './core/ng-material.module';
 import { RoutingRedirectGuard } from './core/routing-redirect.guard';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,7 +20,8 @@ import { RoutingRedirectGuard } from './core/routing-redirect.guard';
     CoreModule,
     CoreModule,
     NgMaterialModule,
-    PagesModule
+    PagesModule,
+    ReactiveFormsModule
   ],
   // entryComponents: [RoutingRedirectGuard],
   providers: [RoutingRedirectGuard],

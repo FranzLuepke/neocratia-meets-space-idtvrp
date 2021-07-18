@@ -1,73 +1,33 @@
-<header id="home" class="header-background">
-<div class="header-section">
-  <div class="header-headline" id="main-header">
-    <h1 class="mat-h1">Political-Tech Activism</h1>
-    <h2>Committed to eliminate corruption and fix our democracies</h2>
-    <h2>🚀 MEETS THE SPACE 🚀</h2>
+<header id="contact_header">
+  <div class="header-section">
+    <div class="header-headline">
+      <h1 class="mat-h1">Latest News!</h1>
+      <p>Check the latests news about Neocratia.</p>
+    </div>
   </div>
-  <div class="header-start">
-    <a
-      mat-raised-button
-      color="accent"
-      class="button"
-      href="https://airtable.com/shrvNukOEICNxELNN"
-      target="_blank"
-      >Want to volunteer? Sign up!</a
-    >
-  </div>
-</div>
 </header>
 
-<div id="why" class="docs-homepage-promo row-background-even">
-<div class="header-headline">
-  <h1 class="mat-h1">Why do we do it?</h1>
-  <p>To fix the system. 💪</p>
-</div>
-<div class="row">
-  <div class="col">
-    <div class="card border-dark mb-3 text-center" style="max-width: 18rem;">
-      <div class="card-header text-center">
-        <h4 class="card-title text-center">We are tired of corruption</h4>
-      </div>
-      <div class="card-body text-dark">
-        <p class="card-text">
-          Big money influencing our laws, and stupid political discourse. The
-          system is a money making machine. The system is broken.
-        </p>
-      </div>
+<div class="container">
+  <h2 class="text-center mb-5">Angular Contact Form Hosted On FireBase</h2>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email"formControlName="Email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname">
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment</label>
+          <textarea class="form-control" formControlName="Comment" name="Comment">
+</textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Submit</button>
+      </form>
     </div>
   </div>
-  <div class="col">
-    <div class="card border-dark mb-3 text-center" style="max-width: 18rem;">
-      <div class="card-header text-center">
-        <h4 class="card-title text-center">
-          Democracy must be honest and efficient
-        </h4>
-      </div>
-      <div class="card-body text-dark">
-        <p class="card-text">
-          Our actual democracy is just a mechanism to let citizens feel
-          important but not because the power really cares about them.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card border-dark mb-3 text-center" style="max-width: 18rem;">
-      <div class="card-header text-center">
-        <h4 class="card-title text-center">
-          Politicals have to work for citizens
-        </h4>
-      </div>
-      <div class="card-body text-dark">
-        <p class="card-text">
-          With the current system the citizens are working hard to fund the
-          system, that funds banks and big corporations. Big companies want
-          money, politicians want power, they are the perfect match to oppress
-          citizens.
-        </p>
-      </div>
-    </div>
-  </div>
-</div>
 </div>
